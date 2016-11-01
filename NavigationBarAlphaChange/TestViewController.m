@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"first";
-//    self.tableView.backgroundColor = [UIColor blueColor];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"next" style:UIBarButtonItemStyleDone target:self action:@selector(next)];
     self.automaticallyAdjustsScrollViewInsets = NO;
 
@@ -58,9 +57,9 @@
 
 - (void)setNavigationBarOpWithScrollOffSet:(float)offset
 {
-    CGFloat height = 480;
+    CGFloat height = 600;
     float alphaValue = offset/height;
-    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:alphaValue];;
+    self.navigationController.navigationBar.barTintColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:alphaValue];
 }
 /*
 #pragma mark - Navigation
